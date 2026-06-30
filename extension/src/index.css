@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: transparent;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  min-width: 400px;
+  min-height: 600px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

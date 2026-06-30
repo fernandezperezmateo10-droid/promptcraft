@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "PromptCraft",
+  "version": "1.0",
+  "description": "Optimiza tus prompts con IA desde cualquier pestaña.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": ["http://localhost:3001/*"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "PromptCraft"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}
